@@ -1,2 +1,14 @@
-package com.spring.importUse;public class User {
+package com.spring.importUse;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class User {
+
+    private int id;
+    private String name;
 }

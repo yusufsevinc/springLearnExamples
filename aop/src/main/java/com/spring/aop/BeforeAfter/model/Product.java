@@ -1,4 +1,4 @@
-package com.spring.aop.model;
+package com.spring.aop.BeforeAfter.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

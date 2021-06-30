@@ -1,13 +1,13 @@
-package com.spring.aop.repository;
+package com.spring.aop.afterReturning.repository;
 
-import com.spring.aop.model.Product;
+import com.spring.aop.afterReturning.model.Product;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class ProductRepository {
+public class ProductRepositoryAfterReturning {
 
     private List<Product> products = new ArrayList<Product>();
 
