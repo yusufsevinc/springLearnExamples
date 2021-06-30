@@ -1,0 +1,5 @@
+package com.spring.learn.jpa.repository;
+
+public class PersonDao {
+
+}

@@ -1,0 +1,14 @@
+package com.spring.learn.business.concretes;
+
+import com.spring.learn.business.abstracts.PersonService;
+import com.spring.learn.jpa.model.Person;
+
+public class PersonManager implements PersonService {
+
+	@Override
+	public void add(Person person) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package propertys;
+
+public class TestProperty {
+	public static void main(String[] arg) {
+		
+	}
+
+}

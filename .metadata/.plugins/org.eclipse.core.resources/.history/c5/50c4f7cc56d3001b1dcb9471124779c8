@@ -1,0 +1,14 @@
+package propertys;
+
+import org.springframework.context.annotation.PropertySource;
+
+@PropertySource("classpath:test.properties")
+public class TestProperty {
+	public static void main(String[] arg) {
+		
+		
+		
+		
+	}
+
+}

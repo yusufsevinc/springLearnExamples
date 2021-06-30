@@ -1,0 +1,5 @@
+package autowire.model;
+
+public class Employee {
+
+}

@@ -1,0 +1,9 @@
+package stereotype.dao;
+
+public class EmployeeDao {
+	
+	public void saveEmployee(Employee employee) {
+		
+	}
+
+}

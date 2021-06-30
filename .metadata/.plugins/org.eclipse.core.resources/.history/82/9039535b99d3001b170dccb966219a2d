@@ -1,0 +1,9 @@
+package spring.aop.simpleBeforeAdvice;
+
+public class PrintMessage {
+	
+	public Stirng log() {
+		return "Print Messaga loglanadý...";
+	}
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dbConnection" class="com.spring.beanfactorypostprocesser.db.DBConnection" init-method="validation" destroy-method="toString">
+        <property name="url" value="localhost:8080"/>
+        <property name="username" value="sevinc"/>
+        <property name="password" value="12345"/>
+
+    </bean>
+    <bean id="beanFactoryProperties" class="com.spring.beanfactorypostprocesser.bean_factory.BeanFactory"></bean>
+</beans>

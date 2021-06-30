@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="myList"
+		class="collectionInjection.model.CollectionInjection">
+		<property name="myList">
+			<list>
+				<value>element1 myList</value>
+				<value>element2 myList</value>
+				<value>element3 myList</value>
+				<value>element4 myList</value>
+			</list>
+		</property>
+		
+		<property name="employeeList">
+			<list>
+				<bean id = "idEmployee" class = "collectionInjection.model.Employee">
+					<property name="name" value ="user_1"/>
+					
+				</bean>
+				
+				<bean id = "idEmployee" class = "collectionInjection.model.Employee">
+					<property name="name" value ="user_2"/>
+					
+				</bean>
+				
+				<bean id = "idEmployee" class = "collectionInjection.model.Employee">
+					<property name="name" value ="user_2"/>
+					
+				</bean>
+ 			</list>
+		</property>
+	</bean>
+
+
+	<bean id="mySet"
+		class="collectionInjection.model.CollectionInjection">
+		<property name="mySet">
+			<list>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+				<value>4</value>
+			</list>
+		</property>
+	</bean>
+
+
+	<bean id="myMap"
+		class="collectionInjection.model.CollectionInjection">
+		<property name="myMap">
+			<map>
+				<entry key="1" value="element 1 myMap" />
+				<entry key="2" value="element 2 myMap" />
+				<entry key="3" value="element 3 myMap" />
+				<entry key="4" value="element 4 myMap" />
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="myProperties"
+		class="collectionInjection.model.CollectionInjection">
+		<property name="myProperties">
+			<props>
+         
+            <prop key = "one">Türkiye</prop>
+            <prop key = "two">Azerbeycan</prop>
+            <prop key = "three">USA</prop>
+            <prop key = "four">USA</prop>
+   
+         </props>
+		</property>
+	</bean>
+
+
+
+
+</beans>

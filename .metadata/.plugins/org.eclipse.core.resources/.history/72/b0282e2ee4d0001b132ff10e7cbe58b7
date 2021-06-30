@@ -1,0 +1,8 @@
+package stereotype.service;
+
+import stereotype.dao.EmployeeDao;
+
+public interface EmployeeService {
+	
+
+}

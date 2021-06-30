@@ -1,0 +1,5 @@
+package collectionInjection.model;
+
+public class CollectionInjectionAnnotation {
+
+}

@@ -1,0 +1,8 @@
+package javabased.configration;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class JavaBasedConfigration {
+
+}

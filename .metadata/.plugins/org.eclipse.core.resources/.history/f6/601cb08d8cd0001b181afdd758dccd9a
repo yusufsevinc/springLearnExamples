@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/util
+http://www.springframework.org/schema/util/spring-util.xsd ">
+	
+	<bean id="idEmployee" class="autowire.model.Employee">
+		<property name="name" value="yusuf" />
+		<property name="surname" value="sevinç" />
+		<property name="address" ref="idAddress"/>
+	</bean>
+
+	<bean id="idAddress" class="autowire.model.Address">
+		<property name="city" value="İstanbul" />
+		<property name="country" value="Türkiye" />
+
+	</bean>
+
+
+
+</beans>

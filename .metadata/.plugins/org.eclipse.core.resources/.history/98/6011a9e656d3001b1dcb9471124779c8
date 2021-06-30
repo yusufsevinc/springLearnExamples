@@ -1,0 +1,20 @@
+package propertys;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+
+@PropertySource("classpath:test.properties")
+public class TestProperty {
+	
+	
+	
+	
+	public static void main(String[] arg) {
+		
+		@Value("${name}") String name;
+		System.out.println(name);
+		
+		
+	}
+
+}

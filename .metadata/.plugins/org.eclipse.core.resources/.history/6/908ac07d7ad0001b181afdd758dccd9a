@@ -1,0 +1,21 @@
+package collectionInjection.test;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import collectionInjection.model.CollectionInjection;
+import collectionInjection.model.Employee;
+
+public class CollectionInjectionAnnotationTest {
+
+	public static void main(String[] arg) {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("collectionInjection.xml");
+
+		CollectionInjectionAnnotation collectionBean = context.getBean("collectionInjectionAnnotation",
+				CollectionInjectionAnnotation.class);
+}
+}

@@ -1,0 +1,23 @@
+package spring.aop.simpleBeforeAdvice;
+
+import org.springframework.aop.framework.ProxyFactory;
+
+public class SimpleClassTest {
+	
+	public static void main(String[] arg) {
+		
+		PrintMessage pm = new PrintMessage();
+		
+	
+		
+		ProxyFactory pf = new ProxyFactory();
+		pf.setTarget(pm);
+		pf.addAdvice(new SimpleBeforeClass());
+		
+		
+		PrintMessage pmGec = (PrintMessage) pf.getProxy();
+		pmGec.log();
+	}
+	
+
+}

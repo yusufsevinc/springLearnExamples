@@ -1,0 +1,16 @@
+package stereotype.dao;
+
+import org.springframework.stereotype.Repository;
+
+import stereotype.model.Employee;
+
+@Repository
+public class EmployeeDaoImpl implements EmployeeDao {
+
+	@Override
+	public void saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

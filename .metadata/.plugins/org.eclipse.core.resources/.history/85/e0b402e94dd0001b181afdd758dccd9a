@@ -1,0 +1,5 @@
+package constructorInjection.model;
+
+public class ConstructorConfuse {
+
+}

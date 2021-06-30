@@ -1,0 +1,5 @@
+package constructorInjection.test;
+
+public class Test {
+
+}

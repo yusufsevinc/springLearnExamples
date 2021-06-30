@@ -1,0 +1,15 @@
+package autowire.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import collectionInjection.model.CollectionInjection;
+
+public class AutowireTest {
+	public static void main(String[] arg) {
+	ApplicationContext context = new ClassPathXmlApplicationContext("autowire.xml");
+
+	CollectionInjection collectionBean = context.getBean("idEmployee", CollectionInjection.class);
+
+	System.out.println(collectionBean);
+}

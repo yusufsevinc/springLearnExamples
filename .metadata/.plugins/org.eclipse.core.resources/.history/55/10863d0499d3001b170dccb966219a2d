@@ -1,0 +1,12 @@
+package spring.aop.simpleBeforeAdvice;
+
+import org.springframework.aop.AfterReturningAdvice;
+
+public class SimpleBeforeClass implements AfterReturningAdvice{
+	
+}
+{
+	
+	
+
+}

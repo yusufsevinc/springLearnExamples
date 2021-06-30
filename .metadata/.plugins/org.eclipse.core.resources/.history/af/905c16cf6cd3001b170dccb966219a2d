@@ -1,0 +1,5 @@
+package com.spring.learn.jpa.model;
+
+public class User {
+
+}

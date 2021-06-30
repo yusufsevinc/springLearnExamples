@@ -1,0 +1,32 @@
+package propertys;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+import org.springframework.stereotype.Component;
+@Component
+@PropertySource("classpath:propertys/test.properties")
+public class Property {
+	
+	@Value("${name}")
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Property [name=" + name + "]";
+	}
+	
+	
+	
+	
+
+}

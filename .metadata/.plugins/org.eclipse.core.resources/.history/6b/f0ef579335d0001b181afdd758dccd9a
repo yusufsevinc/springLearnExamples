@@ -1,0 +1,11 @@
+package setterInjection.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class EmployerSetterInjectionTest {
+	
+	ApplicationContext context = new ClassPathXmlApplicationContext("setterInjection.xml");
+	
+	context.get
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;application.properties&apos; to &apos;s_c_injection/context&apos;&#x0D;&#x0A;- Original project: &apos;hibernateAndJpa&apos;&#x0D;&#x0A;- Destination element: &apos;s_c_injection/context&apos;&#x0D;&#x0A;- Original element: &apos;application.properties&apos;" description="Copy file" destination="=s_c_injection/context" element1="src/main/resources/application.properties" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1624020575359" units="0" version="1.0"/>
+</session>

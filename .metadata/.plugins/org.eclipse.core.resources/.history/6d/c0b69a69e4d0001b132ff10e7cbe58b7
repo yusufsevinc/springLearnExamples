@@ -1,0 +1,14 @@
+package stereotype.service;
+
+import stereotype.model.Employee;
+
+@Service("employeServiceImpl")
+public class EmployeServiceImpl implements EmployeeService {
+
+	@Override
+	public void saveEmployee(Employee employee) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

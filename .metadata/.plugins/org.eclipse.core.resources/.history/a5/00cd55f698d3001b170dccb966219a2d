@@ -1,0 +1,6 @@
+package spring.aop.simpleBeforeAdvice;
+
+public class SimpleBeforeClass
+{
+
+}

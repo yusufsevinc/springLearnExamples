@@ -1,0 +1,18 @@
+package stereotype.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import autowire.model.Employee;
+
+
+
+public class EmployeeAutowireTest {
+	public static void main(String[] arg) {
+	ApplicationContext context = new ClassPathXmlApplicationContext("autowire.xml");
+
+	Employee collectionBean = context.getBean("idEmployee", Employee.class);
+
+	System.out.println(collectionBean);
+}
+}

@@ -1,0 +1,5 @@
+package stereotype.service;
+
+public class EmployeServiceImpl implements EmployeeService {
+
+}

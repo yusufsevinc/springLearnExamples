@@ -1,0 +1,48 @@
+package collectionInjection.test;
+
+import java.util.Map;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import collectionInjection.model.CollectionInjection;
+
+public class CollectionInjectionTest {
+
+	public static void main(String[] arg) {
+
+		ApplicationContext context = new ClassPathXmlApplicationContext("collectionInjection.xml");
+
+		CollectionInjection myList = context.getBean("myList", CollectionInjection.class);
+
+		for (String element : myList.getMyList()) {
+
+			System.out.println(element);
+
+		}
+
+		CollectionInjection mySet = context.getBean("mySet", CollectionInjection.class);
+
+		for (int element : mySet.getMySet()) {
+
+			System.out.println(element);
+
+		}
+		
+		
+
+		CollectionInjection myMap = context.getBean("myMap", CollectionInjection.class);
+
+		for (Map.Entry<String, Object> element : myMap.getMyMap().entrySet()) {
+			
+			System.out.println(element.getKey() + " : " + element.getValue());
+
+
+		}
+		
+		CollectionInjection myProperties = context.getBean("myProperties", CollectionInjection.class);
+
+		System.out.println(myProperties);
+	}
+
+}

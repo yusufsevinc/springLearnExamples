@@ -1,0 +1,5 @@
+package stereotype.dao;
+
+public class EmployeeDaoImpl {
+
+}

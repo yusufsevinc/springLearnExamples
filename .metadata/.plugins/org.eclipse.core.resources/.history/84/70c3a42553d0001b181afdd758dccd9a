@@ -1,0 +1,24 @@
+package collectionInjection.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import collectionInjection.model.CollectionInjection;
+
+public class CollectionInjectionTest {
+	
+	public static void main(String[] arg) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("collectionInjection.xml");
+		
+		CollectionInjection collectionInjection = context.getBean("myList" , CollectionInjection.class);
+		
+		for (String string : collectionInjection.getMyList()) {
+			
+			System.out.println(string);
+			
+		}
+		
+	}
+
+}

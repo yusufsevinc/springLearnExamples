@@ -1,0 +1,25 @@
+package propertys;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
+
+@PropertySource("classpath:propertys/test.properties")
+public class TestProperty {
+	
+	@Autowired
+    private Environment env;
+	
+	@Value("${name}")
+	private String name;
+	
+	
+	public static void main(String[] arg) {
+		
+		System.out.println(name);
+		
+		
+	}
+
+}

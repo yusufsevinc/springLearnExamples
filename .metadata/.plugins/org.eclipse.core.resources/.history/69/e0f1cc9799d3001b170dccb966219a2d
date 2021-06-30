@@ -1,0 +1,12 @@
+package spring.aop.simpleBeforeAdvice;
+
+public class SimpleClassTest {
+	
+	public static void main(String[] arg) {
+		
+		PrintMessage pm = new PrintMessage();
+		
+	}
+	
+
+}
